@@ -1,0 +1,13 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.app
+
+env_variables:
+  GOOGLE_APPLICATION_CREDENTIALS: "/Users/jisiliang/Dropbox/qa/silver/job/SilverberryAI-ff09a9231e7c.json"
+
+builtins:
+- remote_api: on
